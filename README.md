@@ -1,5 +1,5 @@
 # Getting_and_Cleaning_Data
-course project for Getting and Cleaning Data in Coursera
+Course project for Getting and Cleaning Data in Coursera
 
 This repo contains four files
 
@@ -34,9 +34,7 @@ X_train <- read.table("UCI HAR Dataset/train/X_train.txt")
 Y_train <- read.table("UCI HAR Dataset/train/y_train.txt")
 
 
-### GIVING NAMES TO TABLES 
-
-##   & Using descriptive activity names to name the activities in the data set
+### GIVING NAMES TO TABLES & Using descriptive activity names to name the activities in the data set
 
 # Y files were in number so I used 'merge' function to create a row of activity names 
 Y_test <- merge(Y_test, activity_labels, by.x = "V1", by.y = "V1")
